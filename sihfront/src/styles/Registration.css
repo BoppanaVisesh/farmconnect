@@ -1,0 +1,94 @@
+/* Container for the registration page */
+.registration-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    background: url('../images/sih_1.jpeg') no-repeat center center/cover;
+    background-size: cover;
+  }
+  
+  /* Form container styling */
+  .registration-form-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly opaque background for the card */
+    padding: 40px; /* Increased padding for more space inside the card */
+    text-align: center;
+    border-radius: 15px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+    max-width: 500px; /* Increased width of the card */
+    width: 100%;
+    margin: 0 auto; /* Center the card horizontally */
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Header styling */
+  h1 {
+    font-size: 2rem; /* Increased font size */
+    color: #2e7d32;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  /* Form group styling */
+  .input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Space between form elements */
+  }
+  
+  /* Textarea styling */
+  textarea {
+    height: 100px; /* Increased height for better visibility */
+  }
+  
+  /* Button styling */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1b5e20;
+  }
+  
+  /* Additional message styling */
+  .registration-container p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .registration-form-container {
+      padding: 30px;
+      max-width: 90%;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }

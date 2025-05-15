@@ -1,0 +1,90 @@
+.home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
+  
+  .home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/sih_1.jpeg') no-repeat center center/cover;
+    opacity: 0.3; /* Adjust this value for lighter or darker image */
+    z-index: 1;
+  }
+  
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.95); /* Increase the opacity of the form */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Header styling */
+  h1 {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+  }
+  
+  /* Welcome message styling */
+  .welcome-message {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Link styling */
+  .dashboard-link {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .dashboard-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Auth options container styling */
+  .auth-options {
+    text-align: center;
+  }
+  
+  /* Button styling */
+  .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1b5e20;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }

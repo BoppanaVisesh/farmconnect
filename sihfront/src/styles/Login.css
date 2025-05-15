@@ -1,0 +1,87 @@
+/* Container for the login page */
+.login-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  background: url('../images/sih_1.jpeg') no-repeat center center/cover;
+  background-size: cover;
+}
+
+/* Form container styling */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly opaque background for the card */
+  padding: 40px; /* Increased padding for more space inside the card */
+  text-align: center;
+  border-radius: 15px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+  max-width: 400px; /* Increased width of the card */
+  width: 100%;
+  margin: 0 auto; /* Center the card horizontally */
+  position: relative;
+  z-index: 2;
+}
+
+/* Header styling */
+h2 {
+  font-size: 2rem; /* Increased font size */
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styling */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2e7d32;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px;
+    max-width: 90%;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

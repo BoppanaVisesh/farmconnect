@@ -1,0 +1,60 @@
+.product-card {
+    width: 40%;
+    margin: 20px auto; /* Centers the card horizontally with margin */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center; /* Center text and buttons */
+    position: relative;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Full width minus padding */
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1b5e20;
+  }
+  
+  .btn.cancel {
+    background-color: #f44336; /* Red color for cancel button */
+  }
+  
+  .btn.cancel:hover {
+    background-color: #d32f2f;
+  }
+  
+  .btn.remove {
+    background-color: #f44336; /* Red color for remove button */
+  }
+  
+  .btn.remove:hover {
+    background-color: #d32f2f;
+  }
+  
