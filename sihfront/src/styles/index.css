@@ -1,18 +1,21 @@
 :root {
-  --primary-green: #4CAF50;
-  --light-green: #8BC34A;
-  --dark-green: #2E7D32;
+  --primary-green: #3DAB45;
+  --light-green: #7AC47F;
+  --dark-green: #1E6823;
   --white: #FFFFFF;
-  --light-gray: #F5F5F5;
-  --dark-gray: #333333;
+  --light-gray: #F8F9FA;
+  --dark-gray: #2A2A2A;
+  --accent-color: #FAD02C;
+  --hover-transition: all 0.3s ease;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--light-gray);
   color: var(--dark-gray);
+  line-height: a1.6;
 }
 
 .app {
@@ -29,31 +32,50 @@ main {
 .btn {
   background-color: var(--primary-green);
   color: var(--white);
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: var(--hover-transition);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
   background-color: var(--dark-green);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .card {
   background-color: var(--white);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+  transition: var(--hover-transition);
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
 }
 
 .input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid var(--light-green);
-  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1.5px solid #E0E0E0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
 }
 
 .error {
@@ -62,15 +84,16 @@ main {
 }
 
 .header {
-  background-color: var(--primary-green);
-  padding: 10px 20px;
+  background-color: var(--white);
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header a {
-  color: var(--white);
+  color: var(--dark-gray);
   text-decoration: none;
   margin-right: 10px;
 }
@@ -78,8 +101,9 @@ main {
 .footer {
   background-color: var(--dark-green);
   color: var(--white);
-  padding: 10px 20px;
+  padding: 20px 30px;
   text-align: center;
+  margin-top: auto;
 }
 
 .toll-free {

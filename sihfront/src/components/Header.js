@@ -20,8 +20,8 @@ function Header() {
     <header className="header">
       <div className="logo-container">
         {/* <i className="fas fa-tractor logo-icon"></i> */}
-        <img src={logo} alt="FarmConnect Logo" className="logo-image" /> {/* Add logo image */}
-        <Link to="/" className="logo">FarmConnect</Link>
+        <img src={logo} alt="AgroLink  Logo" className="logo-image" /> {/* Add logo image */}
+        <Link to="/" className="logo">AgroLink </Link>
       </div>
       <nav>
         {user ? (
