@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="home">
       <div className="overlay">
-        <h1>Welcome to FarmConnect</h1>
+        <h1>Welcome to AgroLink </h1>
         {user ? (
           <p className="welcome-message">Hello, {user.name}! Go to your <Link to={user.type === 'farmer' ? '/farmer-dashboard' : '/retailer-dashboard'} className="dashboard-link">dashboard</Link>.</p>
         ) : (
