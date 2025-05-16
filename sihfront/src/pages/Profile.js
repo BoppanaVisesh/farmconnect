@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
+import '../styles/Profile.css'; // Import the CSS file
 
 function Profile() {
   const { user, updateUser } = useAuth();
@@ -9,6 +10,7 @@ function Profile() {
     address: user.address,
   });
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
 
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -16,10 +18,15 @@ function Profile() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSuccess(false);
+    setError('');
+    
     try {
       await updateUser(formData);
-      setError('Profile updated successfully');
+      setSuccess(true);
+      setError('');
     } catch (error) {
+      setSuccess(false);
       setError('Failed to update profile. Please try again.');
     }
   };
@@ -28,6 +35,7 @@ function Profile() {
     <div className="profile">
       <h1>Profile</h1>
       {error && <p className="error">{error}</p>}
+      {success && <p className="success">Profile updated successfully!</p>}
       <form onSubmit={handleSubmit}>
         <input
           type="text"
